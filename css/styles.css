@@ -1,0 +1,144 @@
+/*--- Importa a font do site Google Fonts ----*/
+/*https://fonts.google.com/specimen/Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*-- Definição da fonte personalizada como Montserrat --*/
+/*@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+:root {
+    /*----- Paleta de cores usada no projeto -----*/
+    --color-red: #FD6262;
+    --color-dark-red: #E23E3E;
+    --color-background: #EBE5D9;
+    --color-black: #000000;
+    --color-dark-brawn: #392D2D;
+    --color-light-brown: #CCC1AB;
+    --color-hover-brown: #9C927E;
+    --color-gray: #474747;
+    --color-white: #ffffff;
+    --color-rating: #fff200;
+    --color-green: #188a5e;
+
+    /* Fontes principais */
+    /* Fonte principal para títulos */
+    --font-title: 'Montserrat', sans-serif;
+    /* Fonte principal para textos */
+    --font-body: 'Montserrat', sans-serif;
+    /* Fonte para botões e CTAs */
+    --font-ctas: 'Montserrat', sans-serif;
+
+
+    /*-- Tipografia --*/
+    --typography-h1: 3.8125rem; /* 61px */
+    --typography-h2: 3.0625rem; /* 49px */
+    --typography-h3: 2.4375rem; /* 39px */
+    --typography-h4: 1.9375rem; /* 31px */
+    --typography-h5: 1.5625rem; /* 25px */
+    --typography-h6: 1.25rem;  /* 20px */
+    --typography-body: 1rem;    /* 16px */
+    --typography-small: 0.875rem; /* 14px */
+
+    /*----- Pesos das fontes usadas no projeto -----*/
+    --font-weight-900: 900;
+    --font-weight-800: 800;
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --font-weight-300: 300;
+    --font-weight-200: 200;
+    --font-weight-100: 100;
+
+    /*----- Espaçamento entre linhas usados no projeto -----*/
+    --space-between-lines-16: 1.6;
+    --space-between-lines-12: 1.2;
+    --space-between-lines-05: 0.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: normal;
+    line-height: var(--space-between-lines-16);
+    background-color: var(--color-background);
+    color: var(--color-black);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* -------------------------
+    Elementos de Título
+--------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h1);
+    font-weight: var(--font-weight-700);
+    line-height: var(--space-between-lines-12);
+}
+
+h2 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h2);
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h3);
+}
+
+h4 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h4);
+}
+
+h5 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h5);
+}
+
+h6 {
+    font-family: var(--font-title);
+    font-size: var(--typography-h6);
+}
+
+/* -------------------------
+   Parágrafos e texto
+--------------------------*/
+p {
+    font-family: var(--font-body);
+    font-size: var(--typography-body);
+}
+
+/* -------------------------
+   Botões e Chamadas para Ação
+--------------------------*/
+button, .cta {
+    font-family: var(--font-ctas);
+    font-weight: var(--font-weight-600);
+    font-size: var(--typography-body);
+    text-transform: uppercase; 
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .cta:hover {
+    background-color: var(--color-dark-red);
+}
